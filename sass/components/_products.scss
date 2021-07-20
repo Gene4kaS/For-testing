@@ -1,0 +1,224 @@
+.products {
+  display: block;
+  padding: 120px 20px 100px 20px;
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 115px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-left: 115px;
+    padding-right: 115px;
+  }
+}
+
+.products__text-box {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-family: $title-font;
+}
+
+.products__text {
+  font-size: 18px;
+  line-height: 1.166;
+  color: $accent-color-light;
+  margin-bottom: 15px;
+}
+
+//use main styles
+
+//Заголовок секции
+
+.products__title {
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 1.147;
+  letter-spacing: 0.04em;
+
+  color: $accent-color-dark;
+  margin-bottom: 145px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 150px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 260px;
+  }
+}
+
+.products-list {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+// Карточка эдлемент списка
+
+.products-list__item {
+  position: relative;
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  // padding-top: 113px;
+  text-align: center;
+
+  color: $white-text-color;
+
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 20px * 2) / 3);
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+  &:not(:last-child) {
+    margin-bottom: 130px;
+
+    @media screen and (min-width: 768px) {
+      margin-right: 20px;
+      margin-bottom: 0;
+    }
+  }
+}
+
+//Заголовок карточки
+
+.products-list__subtitle {
+  display: block;
+
+  font-family: $title-font;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  margin-bottom: 30px;
+  margin-bottom: 20px;
+  padding-top: 160px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    display: block;
+    top: -113px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 250px;
+    height: 252px;
+    // margin-top: -250px;
+    // margin-left: auto;
+    // margin-right: auto;
+    // margin-bottom: 20px;
+
+    @media screen and (min-width: 768px) {
+      top: -104px;
+      left: 52%;
+      width: 100%;
+      height: 235px;
+      // margin-top: -263px;
+      // margin-bottom: 30px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      top: -210px;
+      left: 50%;
+      width: 100%;
+      height: 335px;
+      // margin-top: -263px;
+      // margin-bottom: 30px;
+    }
+  }
+
+  // &::after {
+  //   content: '';
+  //   display: block;
+  // }
+}
+.products--cream::before {
+  background: url(../images/products/ice-mob1x.png);
+
+  @media screen and (min-width: 768px) {
+    background: url(../images/products/ice-tab1x.png);
+  }
+
+  @media screen and (min-width: 1280px) {
+    background: url(../images/products/ice-desk1x.png);
+  }
+}
+.products--coffee::before {
+  background: url(../images/products/coffee-mob1x.png);
+
+  @media screen and (min-width: 768px) {
+    background: url(../images/products/coffee-tab1x.png);
+  }
+
+  @media screen and (min-width: 1280px) {
+    background: url(../images/products/coffee-desk1x.png);
+  }
+}
+.products--milkshakes::before {
+  background: url(../images/products/milkshake-mob1x.png);
+
+  @media screen and (min-width: 768px) {
+    background: url(../images/products/milkshake-tab1x.png);
+  }
+  @media screen and (min-width: 1280px) {
+    background: url(../images/products/milkshake-desk1x.png);
+  }
+}
+
+.products-list__button-icon {
+  width: 10px;
+  height: 10px;
+}
+
+.products-list__button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border-style: none;
+}
+
+.products-list__points {
+  margin-bottom: 30px;
+  height: 6px;
+  width: 6px;
+}
+
+.products-list__text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.52;
+  letter-spacing: 0.04em;
+  margin-bottom: 30px;
+}
+
+.products-list__textbox {
+  padding: 0 40px 40px 40px;
+  background: $background-hero;
+  border-radius: 24px;
+
+  @media screen and (min-width: 768px) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+
+  &--yellow {
+    background: #f0d1a5;
+  }
+  &--green {
+    background: #c2e297;
+  }
+}
